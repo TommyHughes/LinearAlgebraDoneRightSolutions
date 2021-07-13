@@ -1,0 +1,261 @@
+\chapter{Linear Maps}
+
+\section{\label{3.A} The Vector Space of Linear Maps}
+
+\begin{exercise} \label{3.A.1}
+
+\end{exercise}
+
+\begin{exercise} \label{3.A.2}
+
+\end{exercise}
+
+\begin{exercise} \label{3.A.3}
+
+\end{exercise}
+
+\begin{exercise} \label{3.A.4}
+
+\end{exercise}
+
+\begin{exercise} \label{3.A.5}
+
+\end{exercise}
+
+\begin{exercise} \label{3.A.6}
+
+\end{exercise}
+
+\begin{exercise} \label{3.A.7}
+    Show that every linear map from a \(1\)-dimensional vector space to itself is multiplication by some scalar. More precisely, prove that if dim\(V = 1\) and \( T \in \mathcal{L}(V,V) \), then there exists \( \lambda \in \mathbb{F} \) such that \( Tv = \lambda v \) for all \( v \in V \).
+    
+    \begin{proof}
+        Let \( (v_1) \) be a basis of \( V \) and let \( T \in \mathcal{L}(V,V) \). Then \( T(v_1) \in V \) which implies, by expansion in the basis, \( T(v_1) = \lambda v_1 \) for some \( \lambda \in \mathbb{F} \). Thus if \( v \in V \) then
+        
+        \begin{align*}
+            T(v) &= T(\alpha v_1) \\
+            &= \alpha T(v_1) \\
+            &= \alpha \lambda v_1 \\
+            &= \lambda \alpha v_1 \\
+            &= \lambda v
+        \end{align*}
+    \end{proof}
+\end{exercise}
+
+\begin{exercise} \label{3.A.8}
+    Give an example of a function \( \phi: \mathbb{R}^2 \rightarrow \mathbb{R} \) such that
+    \[ \phi(av) = a\phi(v) \]
+    for all \( a \in \mathbb{R} \) and all \( v \in \mathbb{R}^2 \) but \( \phi \) is not linear.
+    
+    \begin{proof}
+        Define
+        \[ \phi(x_1,x_2) = \begin{cases} x_1 & ,x_2=0 \\ 0 & ,x_2 \neq 0 \end{cases} \]
+        Then 
+        \[ \phi(1,1) = 0 \neq 1 = 1 + 0 = \phi(1,0) + \phi(0,1) \]
+        so that \( \phi \) is not additive. However,
+        \[ \phi(\alpha x_1, \alpha 0) = \alpha x_1 = \alpha \phi(x_1,0) \]
+        and if \( x_2 \neq 0 \) then
+        \[ \phi(\alpha x_1, \alpha x_2) = \begin{cases} \phi(0,0)=0=\phi(x_1,x_2) & ,\alpha=0 \\ 0=\alpha0=\alpha\phi(x_1,x_2) & ,\alpha \neq 0 \end{cases} \]
+    \end{proof}
+\end{exercise}
+
+\begin{exercise} \label{3.A.9}
+
+\end{exercise}
+
+\begin{exercise} \label{3.A.10}
+
+\end{exercise}
+
+\begin{exercise} \label{3.A.11}
+
+\end{exercise}
+
+\begin{exercise} \label{3.A.12}
+
+\end{exercise}
+
+\begin{exercise} \label{3.A.13}
+
+\end{exercise}
+
+\begin{exercise} \label{3.A.14}
+
+\end{exercise}
+
+\section{\label{3.B} Null Spaces and Ranges}
+
+\section{\label{3.C} Matrices}
+
+\section{\label{3.D} Matrices}
+
+\section{\label{3.E} Products and Quotients of Vector Spaces}
+
+\section{\label{3.F} Duality}
+
+\begin{exercise} \label{3.F.1}
+    Explain why every linear functional is either surjective or the zero map.
+    
+    \begin{proof}
+        Let \( \phi: V \rightarrow \mathbb{F} \) be a linear functional, different from the zero map. Then there exists \( v \in V \) such that \( \phi(v) = x \neq 0 \). Now, let \( y \in \mathbb{F} \). Then, by linearity and the field axioms
+        \begin{align*}
+            \phi(\alpha v) &= \alpha \phi(v) \\
+            &= \alpha x \\
+            &= y
+        \end{align*}
+        implying that \( \phi \) is surjective.
+    \end{proof}
+\end{exercise}
+
+\begin{exercise} \label{3.F.2}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.3}
+    Suppose \( V \) is finite-dimensional and \( v \in V \) with \( v \neq 0 \). Prove that there exists \( \phi \in V' \) such that \( \phi(v) = 1 \).
+    
+    \begin{proof}
+        Since \( V \) is finite-dimensional we have
+        \[ v = \sum_{i=1}^n \alpha_i v_i \]
+        for some basis \( (v_k) \). Since \( v \neq 0 \), there exists some \( j \) such that \( \alpha_j \neq 0 \). Then the linear transformation \( \phi \in V' \) defined by
+        \[ \phi(v_i) = \begin{cases} \frac{1}{\alpha_i} & ,i=j \\ 0 & ,i \neq j \end{cases} \]
+        admits
+        \[ \phi(v) = \phi\left(\sum \alpha v_i\right) = \sum \alpha_i \phi(v_i) = \alpha_j \phi(v_j) = \alpha_j \frac{1}{\alpha_j} = 1 \]
+    \end{proof}
+\end{exercise}
+
+\begin{exercise} \label{3.F.4}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.5}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.6}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.7}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.8}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.9}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.10}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.11}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.12}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.13}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.14}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.15}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.16}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.17}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.18}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.19}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.20}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.21}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.22}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.23}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.24}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.25}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.26}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.27}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.28}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.29}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.30}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.31}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.32}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.33}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.34}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.35}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.36}
+
+\end{exercise}
+
+\begin{exercise} \label{3.F.37}
+
+\end{exercise}

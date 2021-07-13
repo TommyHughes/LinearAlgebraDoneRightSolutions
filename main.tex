@@ -1,0 +1,44 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools, amsmath, enumitem, mathrsfs, amsthm, amssymb}
+
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{corollary}{Corollary}
+
+\newenvironment{exercise}
+{\noindent \subsection{}}
+{}
+
+\renewcommand{\thesection}{\thechapter.\Alph{section}}
+
+\usepackage[pdfencoding=auto, psdextra]{hyperref}
+\title{Linear Algebra Done Right \break Solutions Manual}
+\author{Thomas Hughes}
+\date{December 2020}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\input{Chapter1.tex}
+
+\input{Chapter2.tex}
+
+\input{Chapter3.tex}
+
+\input{Chapter4.tex}
+
+\input{Chapter5.tex}
+
+\input{Chapter6.tex}
+
+\input{Chapter7.tex}
+
+\input{Chapter8.tex}
+
+\input{Chapter9.tex}
+
+\input{Chapter10.tex}
+\end{document}
